@@ -1,5 +1,7 @@
 # Paperplane
 
+**English** | [简体中文](README.zh-CN.md)
+
 A calmer Slack web experience: Telegram-inspired message bubbles, a simpler sidebar, and local containers with one level of subcontainers.
 
 **Publisher:** Thin-K-ayn · **Version:** 0.5.0 beta
