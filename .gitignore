@@ -1,0 +1,10 @@
+# Private local verification and screenshots must never be published.
+/VERIFICATION.md
+/preview/*.jpg
+/preview/*.png
+/preview/local-development-notes.md
+/dist/
+/store/release-evidence/
+__pycache__/
+*.pyc
+.DS_Store
