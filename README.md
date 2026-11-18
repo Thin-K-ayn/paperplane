@@ -6,16 +6,45 @@ A calmer Slack web experience: Telegram-inspired message bubbles, a simpler side
 
 [Privacy policy](https://thin-k-ayn.github.io/paperplane/privacy.html) · [Support](mailto:windlyen@gmail.com)
 
-## Installation
+## Install Paperplane (free, about 2 minutes)
 
-The unlisted Chrome Web Store release is being prepared. A store installation link will be added after approval.
+Paperplane is currently shared through this repository. Chrome Web Store publishing is on hold. You do not need a developer account, payment, Git, or any build tools.
 
-For local development or a manual trial:
-1. Download this repository and extract it.
-2. Open `chrome://extensions`, enable Developer mode, click **Load unpacked**, and choose the `extension` folder.
-3. Open Slack at `https://app.slack.com/client/` and refresh existing Slack tabs.
+Use **Google Chrome on a computer** and open Slack in that browser. Paperplane does not work in Slack's desktop or mobile apps.
 
-Company Chrome policies may restrict installation. This works in Chrome's Slack web app, not the Slack desktop or mobile apps.
+1. [Download the latest source ZIP](https://github.com/Thin-K-ayn/paperplane/archive/refs/heads/main.zip), or click **Code → Download ZIP** on this repository.
+2. Extract the ZIP into a permanent location, such as `Documents/Paperplane`. Keep the extracted files there: Chrome loads them directly from disk.
+3. In the **same Chrome profile you use for Slack**, type `chrome://extensions` into the address bar and press Enter.
+4. Turn on **Developer mode** in the top-right corner and leave it on while using Paperplane.
+5. Click **Load unpacked**. Inside the extracted `paperplane-main` folder, select **`extension`**. This is the folder containing `manifest.json`; do not select the ZIP or the outer repository folder.
+6. Confirm that **Paperplane — Chat layout for Slack** appears and its switch is on.
+7. Open your Slack workspace in Chrome, or refresh all existing Slack tabs. Paperplane's layout should appear. Use **Original Slack** whenever you want to switch back.
+
+To start organizing, choose **Containers → + New** above the sidebar. Each teammate creates their own containers; downloading this repository does not copy anyone else's Slack chats or organization.
+
+## Update an existing installation
+
+Updates are **manual**. Downloading a new ZIP alone does not update the installed extension.
+
+1. Download the latest source ZIP using the link above and extract it into a temporary folder.
+2. Find the **original `extension` folder that you loaded into Chrome**. If you are unsure, open `chrome://extensions`, click Paperplane's **Details**, and look for its unpacked source path.
+3. Copy everything **inside the new `extension` folder** into that original `extension` folder. Replace matching files and merge subfolders when prompted. Keep the original folder name and location; do not accidentally create an `extension/extension` folder.
+4. Open `chrome://extensions` and click the circular **Reload** button on the existing Paperplane card.
+5. Refresh every open Slack tab. Check the version on Paperplane's card or Details page against the version at the top of this README.
+
+**Keep your containers:** update the existing installation in place, in the same Chrome profile. Do not click **Remove**, clear extension storage, or load a second copy from the new download folder. An in-place reload preserves local settings; uninstalling deletes them. Settings are not stored in the downloaded source files, and this version has no export/import feature.
+
+## Quick troubleshooting
+
+| Problem | What to do |
+| --- | --- |
+| “Manifest file is missing or unreadable” | Extract the ZIP first, then choose the inner `extension` folder containing `manifest.json`. |
+| Slack still looks unchanged | Check that Paperplane is enabled in the same Chrome profile as Slack, refresh Slack, and select **Telegram style** in Paperplane's popup if Original Slack is selected. |
+| An update has no effect | Replace the files at the original loaded path, reload Paperplane in `chrome://extensions`, then refresh Slack. Both reloads are needed. |
+| Developer mode or Load unpacked is blocked | Ask your company's IT administrator whether manually installed extensions are allowed. |
+| Something looks wrong | Switch to **Original Slack**. [Report an issue](https://github.com/Thin-K-ayn/paperplane/issues) with the Paperplane version and steps to reproduce; remove private workspace details from screenshots. |
+
+To pause Paperplane without losing containers, use **Original Slack** or switch off its card in `chrome://extensions`. Keep the installed folder in place.
 
 ## Features
 
